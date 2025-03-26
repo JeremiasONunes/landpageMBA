@@ -8,16 +8,15 @@ router.get("/download", fileController.downloadFile);
 
 
 router.post("/lead", (req, res) => {
-    const { nome, email, telefone, empresa } = req.body;
+    const { nome, email, telefone, empresa, graduacao } = req.body;
 
     if (!nome || !email || !telefone || !empresa) {
         return res.status(400).json({ error: "Todos os campos são obrigatórios" });
     }
+    //simulçao de salvamento em DB
+    console.log("Novo lead recebido:", { nome, email, telefone, empresa, graduacao });
 
-    console.log("Novo lead recebido:", { nome, email, telefone, empresa });
-
-    res.status(201).json({ 
-        message: "Cadastro realizado com sucesso!", 
+    res.status(201).json({  
         downloadUrl: "/api/download"  
     });
 });

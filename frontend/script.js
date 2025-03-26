@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let empresa = document.getElementById("empresa").value.trim();
         let graduacao = document.getElementById("graduacao") ? document.getElementById("graduacao").value.trim() : "";
 
-        if (!nome || !email || !telefone || !empresa) {
+        if (!nome || !email || !telefone || !empresa || !graduacao) {
             alert("Por favor, preencha todos os campos.");
             return;
         }
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
             let resultado = await resposta.json();
 
             if (resposta.ok) {
-                alert(resultado.message);
                 document.getElementById("leadForm").reset();
 
                 
