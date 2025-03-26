@@ -9,23 +9,25 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="imagens\LogoUnivas.png" alt="Logo UNIVAS" class="logo">
+            <img src="imagens/LogoUnivas.png" alt="Logo UNIVAS" class="logo">
             <span class="contato">Contato: (99) 99999-9999</span>
         </div>
     </header>
     
     <section class="banner">
-        <h2>Transforme sua carreira no mercado financeiro</h2>
-        <p>Preencha o formulário abaixo e tenha acesso a um material exclusivo do curso.</p>
+        <div class="banner-content">
+            <h2>Transforme sua carreira no mercado financeiro</h2>
+            <p>Preencha o formulário e tenha acesso a um material exclusivo do curso.</p>
+        </div>
     </section>
     
     <section class="sobre-curso">
         <h3>Sobre o curso</h3>
-        <p>O mercado financeiro está em constante evolução, exigindo cada vez mais profissionais capacitados e atualizados. O MBA em Banking, Finanças e Cooperativismo da UNIVAS foi desenvolvido para preparar você para os desafios desse setor dinâmico, fornecendo conhecimentos estratégicos sobre gestão financeira, investimentos, cooperativismo e tendências do mercado.</p>
-        <p>Esteja pronto para se destacar e avançar na sua carreira! Cadastre-se agora e tenha acesso a um material exclusivo sobre o curso.</p>
+        <p>O mercado financeiro está em constante evolução, exigindo cada vez mais profissionais capacitados. O MBA em Banking, Finanças e Cooperativismo da UNIVAS foi desenvolvido para preparar você para os desafios desse setor dinâmico.</p>
+        <p>Esteja pronto para se destacar e avançar na sua carreira! Cadastre-se agora e tenha acesso a um material exclusivo.</p>
     </section>
     
-    <section class="formulario">
+    <div class="formulario-flutuante">
         <h3>Cadastre-se para mais informações</h3>
         <form id="leadForm">
             <label for="nome">Nome:</label>
@@ -37,12 +39,15 @@
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required>
 
-            <label for="empresa">Empresa (opcional):</label>
+            <label for="empresa">Ramo de Atuação:</label>
+            <input type="text" id="empresa" name="empresa">
+
+            <label for="graduacao">Descreva sua escolaridade:</label>
             <input type="text" id="empresa" name="empresa">
 
             <button type="submit" class="botao">Quero saber mais</button>
         </form>
-    </section>
+    </div>
     
     <footer>
         <p>&copy; 2025 UNIVAS. Todos os direitos reservados.</p>
