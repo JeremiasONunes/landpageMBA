@@ -1,4 +1,5 @@
 body {
+    background-image: url('./imagens/backgound1.jpg');
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #27ae60;
+    background-color: #1ac025;
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -31,23 +32,63 @@ header {
     font-weight: bold;
 }
 
-.banner {
-    background: linear-gradient(135deg, #1e88e5, #1565c0);
+.container{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.section1 {
+    flex: 2;
     color: white;
     text-align: center;
-    padding: 60px 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.sobre-curso {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
+.section1-content h1{
+ font-size: 100px;
+}
+
+.section2 {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; 
+}
+
+.section2-content{
+    color: black;
+}
+
+.section2-content h1{
+    color: rgb(7, 113, 35);
+    font-size: 30px;
+}
+
+.register-button {
+    background-color: #1ac025;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logos img{
+    width: 180px;
+    height: auto;
+    padding-inline: 50px;
 }
 
 .formulario-flutuante {
@@ -104,7 +145,7 @@ form input {
 footer {
     text-align: center;
     padding: 15px;
-    background: #27ae60;
+    background-color: #1ac025;
     color: white;
     position: fixed;
     bottom: 0;
