@@ -43,3 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnCadastrese = document.getElementById("btnCadastrese");
+    const formulario = document.getElementById("formulario");
+
+    btnCadastrese.addEventListener("click", function () {
+        formulario.style.display = "block";
+        formulario.scrollIntoView({ behavior: "smooth" });
+    });
+});
