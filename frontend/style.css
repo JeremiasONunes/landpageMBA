@@ -65,8 +65,12 @@ header {
 }
 
 .section2-content h1{
-    color: rgb(7, 113, 35);
+    color: rgb(21, 201, 69);
     font-size: 30px;
+}
+
+.section2-content h3{
+    margin-top: 100px;
 }
 
 .register-button {
@@ -78,6 +82,7 @@ header {
     color: #ffffff;
     font-size: 30px;
     margin-top: 150px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 footer{
