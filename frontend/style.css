@@ -19,7 +19,7 @@ header {
 .header-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     align-items: center;
 }
 
@@ -32,10 +32,11 @@ header {
     font-weight: bold;
 }
 
-.container{
+.container {
     display: flex;
-    height: 100vh;
-    
+    height: 85vh; /* Reduzi de 100vh para 85vh para evitar scroll */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
 .section1 {
@@ -47,7 +48,7 @@ header {
 }
 
 .section1-content h1{
- font-size: 100px;
+ font-size: 80px;
 }
 
 .section2 {
@@ -55,9 +56,9 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px; 
 }
 
 .section2-content{
@@ -81,7 +82,7 @@ header {
     cursor: pointer;
     color: #ffffff;
     font-size: 30px;
-    margin-top: 150px;
+    margin-top: 80px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -89,19 +90,21 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #1ac025;
     color: white;
-    position: fixed;
+    position:static;
     bottom: 0;
     width: 100%;
+    height: 7%;
 }
 
 .footer-logos img{
-    width: 180px;
+    width: 50px;
     height: auto;
     padding-inline: 50px;
 }
+
 
 
 .formulario {
@@ -110,7 +113,7 @@ footer {
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 210px;
+    margin-bottom: 150px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
